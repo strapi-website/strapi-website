@@ -1,0 +1,24 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        midnight: 'rgb(18, 16, 99)',
+        darkblue: 'rgb(1,19,37)',
+        pracblack: 'rgb(0,0,14)',
+      },
+      minWidth: {
+        '250': '250px'
+      }
+    },
+  },
+  plugins: [],
+}
