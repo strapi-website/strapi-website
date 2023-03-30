@@ -21,7 +21,7 @@ function Technologies({}: Props) {
         <Image src="/grafana.webp" alt='grafana-logo' width={200} height={100} />
       </div>
       <div className={imgClass}>
-        <Image src="/mongodb.webp" alt='mongo-db-logo' width={200} height={100} />
+        <Image src="/lua.png" alt='lua-logo' width={200} height={100} className="scale-75" />
       </div>
       <div className={imgClass}>
         <Image src="/prometheus.webp" alt='prometheus-logo' width={200} height={100} />

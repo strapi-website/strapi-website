@@ -21,13 +21,30 @@ export default function Home() {
         <Header />
         <div className='w-full max-w-screen-2xl mt-14 flex flex-col items-center'>
             
-          <h1 className=' text-5xl text-center'>Welcome to Str<span className=' text-amber-600'>API</span>!</h1>
+          <h1 className='mb-32 text-5xl text-center'>Welcome to Str<span className=' text-amber-600'>API</span>!</h1>
 
-          <Image src='/logo.png' alt='hero image' height={400} width={400} className=' m-10' />
+          <div className='relative flex justify-center items-center'>
+            <div className='absolute inset-0 bg-amber-600 rounded-full blur-2xl'></div>
+            <Image 
+              src='/logo.png' 
+              alt='hero image' 
+              height={350} 
+              width={350} 
+              className='m-10 relative z-10 bg-gradient-to-b from-darkblue via-sky-950 to-darkblue  rounded-full' 
+            />
+          </div>
 
-          <h2 className='text-center m-8 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600'>
+          <h2 className='text-center m-8 mt-32 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600'>
             Stress-test your application to de-stress your occupation.
           </h2>
+
+          <Link 
+            href="https://github.com/oslabs-beta/strapi"
+            target="_blank"
+            className='text-2xl rounded-md p-4 mt-8 bg-gradient-to-r from-darkblue via-sky-950 to-darkblue shadow-md shadow-slate-600 hover:scale-105 hover:text-sky-300 transition-all'
+          >
+            Click Here To Get Started
+          </Link>
 
           <hr className=' border-sky-800 w-5/6 m-24' />
 
