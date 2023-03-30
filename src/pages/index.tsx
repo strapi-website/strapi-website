@@ -21,13 +21,30 @@ export default function Home() {
         <Header />
         <div className='w-full max-w-screen-2xl mt-14 flex flex-col items-center'>
             
-          <h1 className=' text-5xl text-center'>Welcome to Str<span className=' text-amber-600'>API</span>!</h1>
+          <h1 className='mb-32 text-5xl text-center'>Welcome to Str<span className=' text-amber-600'>API</span>!</h1>
 
-          <Image src='/logo.png' alt='hero image' height={400} width={400} className=' m-10' />
+          <div className='relative flex justify-center items-center'>
+            <div className='absolute inset-0 bg-amber-600 rounded-full blur-2xl'></div>
+            <Image 
+              src='/logo.png' 
+              alt='hero image' 
+              height={350} 
+              width={350} 
+              className='m-10 relative z-10 bg-gradient-to-b from-darkblue via-sky-950 to-darkblue  rounded-full' 
+            />
+          </div>
 
-          <h2 className='text-center m-8 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600'>
+          <h2 className='text-center m-8 mt-32 text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600'>
             Stress-test your application to de-stress your occupation.
           </h2>
+
+          <Link 
+            href="https://github.com/oslabs-beta/strapi"
+            target="_blank"
+            className='text-2xl rounded-md p-4 mt-8 bg-gradient-to-r from-darkblue via-sky-950 to-darkblue shadow-md shadow-slate-600 hover:scale-105 hover:text-sky-300 transition-all'
+          >
+            Click Here To Get Started
+          </Link>
 
           <hr className=' border-sky-800 w-5/6 m-24' />
 
@@ -70,13 +87,30 @@ export default function Home() {
 
           <hr className=' border-sky-800 w-5/6 m-24' />
 
-          <section className='flex flex-col items-center'>
+          <section className='flex flex-col gap-7 items-center'>
             <h1 className='text-3xl mb-6'>Str<span className=' text-amber-600'>API</span> in the Media:</h1>
 
-            <p className='flex justify-center items-center text-lg'>Check out our article on &nbsp;
-              <Link href="/" className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600 flex justify-center items-center hover:scale-110 transition-all'>
+            <p className='flex justify-center items-center text-2xl'>Check out our article on &nbsp;
+              <Link 
+                href="https://medium.com/@plooferz/strapi-an-open-source-solution-for-stress-and-load-testing-8d17a0718d87" className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600 flex justify-center items-center hover:scale-110 transition-all'
+                target="_blank"
+              >
                 Medium!
               </Link>
+            </p>
+
+            <p 
+              className='flex justify-center items-center text-2xl'
+            >
+              Check out our &nbsp;
+              <Link 
+                href="https://www.linkedin.com/company/strapi-oslabs/" 
+                target="_blank"
+                className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-amber-600 flex justify-center items-center hover:scale-110 transition-all'
+              >
+                 LinkedIn &nbsp;
+              </Link>
+              page!
             </p>
 
           </section>
